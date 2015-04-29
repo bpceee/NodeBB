@@ -1,21 +1,26 @@
-### Installation
+## Installation
 `npm install`
 
-### Setup db and other configs
+## Setup db and other configs
 `./nodebb setup`
 
-### install customized plugins
+## install customized plugins
 `cp -rf customized/* node_modules/`
 
-### start server
+## start server
 `./nodebb start`
 
-### activate plugins-write-api
-Login in as admin, go to ADMIN CONTROL PANEL->EXTEND->PLUGINS, click Activate on nodebb-plugins-write-api
+## setting
+Login in as admin
 
-### get plugins-write-api token
+#### activate plugins-write-api
+ADMIN CONTROL PANEL->EXTEND->PLUGINS, click Activate on nodebb-plugins-write-api
+
+#### get plugins-write-api token
 1. refer to https://github.com/NodeBB/nodebb-plugin-write-api
-2. set the token to Marksimos's config
+2. set the token to plugins-write-api user(your main site)
 
-### forbidden user registration
-Login in as admin, go to ADMIN CONTROL PANEL->SETTINGS->USER
+#### setting as admin
+1. ADMIN CONTROL PANEL->SETTINGS->USER, disallow registration, disallow acount deletion
+2. ADMIN CONTROL PANEL->APPEARANCE->THEMES, chose Persona
+
