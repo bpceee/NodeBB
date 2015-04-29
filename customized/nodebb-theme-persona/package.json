@@ -1,0 +1,71 @@
+{
+  "name": "nodebb-theme-persona",
+  "version": "0.1.36",
+  "nbbpm": {
+    "compatibility": "^0.7.0"
+  },
+  "description": "Persona theme for NodeBB",
+  "main": "theme.less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psychobunny/nodebb-theme-persona"
+  },
+  "keywords": [
+    "nodebb",
+    "theme",
+    "forum",
+    "bootstrap",
+    "responsive"
+  ],
+  "contributors": [
+    {
+      "name": "Andrew Rodrigues",
+      "email": "andrew@designcreateplay.com",
+      "url": "https://github.com/psychobunny"
+    },
+    {
+      "name": "Julian Lam",
+      "email": "julian@designcreateplay.com",
+      "url": "https://github.com/julianlam"
+    },
+    {
+      "name": "Barış Soner Uşaklı",
+      "email": "baris@designcreateplay.com",
+      "url": "https://github.com/barisusakli"
+    }
+  ],
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/psychobunny/nodebb-theme-persona/issues"
+  },
+  "homepage": "https://github.com/psychobunny/nodebb-theme-persona",
+  "_id": "nodebb-theme-persona@0.1.36",
+  "dist": {
+    "shasum": "2b0ac7e417faadeb244617fe7d6f3f34257688d0",
+    "tarball": "http://registry.npmjs.org/nodebb-theme-persona/-/nodebb-theme-persona-0.1.36.tgz"
+  },
+  "_from": "nodebb-theme-persona@^0.1.23",
+  "_npmVersion": "1.4.3",
+  "_npmUser": {
+    "name": "baris",
+    "email": "barisusakli@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "psychobunny",
+      "email": "psycho.bunny@hotmail.com"
+    },
+    {
+      "name": "baris",
+      "email": "barisusakli@gmail.com"
+    },
+    {
+      "name": "julianlam",
+      "email": "julian@designcreateplay.com"
+    }
+  ],
+  "directories": {},
+  "_shasum": "2b0ac7e417faadeb244617fe7d6f3f34257688d0",
+  "_resolved": "https://registry.npmjs.org/nodebb-theme-persona/-/nodebb-theme-persona-0.1.36.tgz",
+  "readme": "ERROR: No README data found!"
+}

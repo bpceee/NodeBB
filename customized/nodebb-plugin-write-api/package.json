@@ -1,0 +1,59 @@
+{
+  "name": "nodebb-plugin-write-api",
+  "version": "3.0.4",
+  "description": "Write-enabled API for NodeBB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianlam/nodebb-plugin-write-api.git"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "write",
+    "API",
+    "REST",
+    "JSON"
+  ],
+  "author": {
+    "name": "Julian Lam",
+    "email": "julian@nodebb.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julianlam/nodebb-plugin-write-api/issues"
+  },
+  "homepage": "https://github.com/julianlam/nodebb-plugin-write-api",
+  "dependencies": {
+    "express": "^4.12.0",
+    "passport-http-bearer": "^1.0.1"
+  },
+  "nbbpm": {
+    "compatibility": "^0.7.0"
+  },
+  "gitHead": "a1578e93675b1bdcb743f2e7be2100570cbc8215",
+  "_id": "nodebb-plugin-write-api@3.0.4",
+  "_shasum": "4d4384c68b3685f8c6bf1bbdb18c177d2c13bbdd",
+  "_from": "nodebb-plugin-write-api@3.0.4",
+  "_npmVersion": "2.0.0",
+  "_npmUser": {
+    "name": "julianlam",
+    "email": "julian@designcreateplay.com"
+  },
+  "maintainers": [
+    {
+      "name": "julianlam",
+      "email": "julian@designcreateplay.com"
+    }
+  ],
+  "dist": {
+    "shasum": "4d4384c68b3685f8c6bf1bbdb18c177d2c13bbdd",
+    "tarball": "http://registry.npmjs.org/nodebb-plugin-write-api/-/nodebb-plugin-write-api-3.0.4.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/nodebb-plugin-write-api/-/nodebb-plugin-write-api-3.0.4.tgz",
+  "readme": "ERROR: No README data found!"
+}
