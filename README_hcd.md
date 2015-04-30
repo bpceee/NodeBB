@@ -7,6 +7,10 @@
 ## install customized plugins
 `cp -rf customized/* node_modules/`
 
+### customized plugin说明：
+1. nodebb-theme-persona
+    * 去掉了修改密码界面
+
 ## start server
 `./nodebb start`
 
