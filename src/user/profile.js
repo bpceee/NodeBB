@@ -308,4 +308,21 @@ module.exports = function(User) {
 			});
 		}
 	};
+
+    User.resetPassword = function(uid, newPassword, callback){
+        if (!uid || !newPassword) {
+            return callback(new Error('[[error:invalid-uid]]'));
+        }
+
+        User.hashPassword(newPassword, function(err, hash) {
+            if (err) {
+                return callback(err);
+            }
+
+            async.parallel([
+                async.apply(User.setUserField, uid, 'password', hash),
+                async.apply(User.reset.updateExpiry, uid)
+            ], callback);
+        });
+    }
 };
