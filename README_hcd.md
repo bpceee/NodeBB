@@ -35,3 +35,9 @@ ADMIN CONTROL PANEL->SETTINGS->ADVANCED, DOMAIN SETTINGS, set session cookie to 
 
 
 ## 设置主服务器的/etc/hosts文件，使NodeBB的所在的二级域名指向NodeBB所在机器的内网IP (安全，快速。。)
+
+
+## update log
+1. update src/user/profile.js, add  User.resetPassword function
+2. customize nodebb-theme-persona plugin, forbidden user password/name/email update
+3. customize nodebb-plugin-write-api, refer to https://github.com/bpceee/nodebb-plugin-write-api
