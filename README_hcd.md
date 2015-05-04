@@ -1,3 +1,5 @@
+假设nodeBB配置在二级域名下，安装于次服务器中。
+
 ## Installation
 `npm install`
 
@@ -28,3 +30,8 @@ ADMIN CONTROL PANEL->EXTEND->PLUGINS, click Activate on nodebb-plugins-write-api
 1. ADMIN CONTROL PANEL->SETTINGS->USER, disallow registration, disallow acount deletion
 2. ADMIN CONTROL PANEL->APPEARANCE->THEMES, chose Persona
 
+#### set cookie session
+ADMIN CONTROL PANEL->SETTINGS->ADVANCED, DOMAIN SETTINGS, set session cookie to .yourdomainname.com
+
+
+## 设置主服务器的/etc/hosts文件，使NodeBB的所在的二级域名指向NodeBB所在机器的内网IP (安全，快速。。)

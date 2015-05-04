@@ -25,14 +25,14 @@
 					<div class="control-group">
 						<label class="control-label" for="inputUsername">[[user:username]]</label>
 						<div class="controls">
-							<input class="form-control" type="text" id="inputUsername" placeholder="[[user:username]]" value="{username}">
+							<input class="form-control" type="text" disabled id="inputUsername" placeholder="[[user:username]]" value="{username}">
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputEmail">[[user:email]]</label>
 						<div class="controls">
-							<input class="form-control" type="text" id="inputEmail" placeholder="[[user:email]]" value="{email}">
+							<input class="form-control" type="text" disabled id="inputEmail" placeholder="[[user:email]]" value="{email}">
 						</div>
 
 					</div>
