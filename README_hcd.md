@@ -1,48 +1,59 @@
 假设nodeBB配置在二级域名下，安装于次服务器中。
 
-# NodeBB
+# NodeBB 与自己的网站 集成 注册/登录/修改密码/退出登录功能
 
-## Installation
-`npm install`
+## Installation 安装NodeBB
+`sudo npm install`
 
-## Setup db and other configs
+## Setup db and other configs (run mongodb first)
 `./nodebb setup`
 
-## install customized plugins
+## install customized plugins  (去掉了修改密码界面)
 `cp -rf customized/* node_modules/`
 
-### customized plugin说明：
+
+### customized theme 说明：
 1. nodebb-theme-persona
     * 去掉了修改密码界面
+
+
 
 ## start server
 `./nodebb start`
 
+
 ## setting
 Login in as admin
 
-#### activate plugins-write-api
+#### activate plugins-write-api  激活 nodebb-plugins-write-api
 ADMIN CONTROL PANEL->EXTEND->PLUGINS, click Activate on nodebb-plugins-write-api
+进入管理员界面, 点击 左边的EXTEND菜单 里面的 PLUGINS 子菜单. 激活 nodebb-plugin-write-api
 
-#### get plugins-write-api token
-1. refer to https://github.com/NodeBB/nodebb-plugin-write-api
+然后重启NodeBB程序.
+
+#### get plugins-write-api token  获取 插件的token
+1. refer to https://github.com/NodeBB/nodebb-plugin-write-api  [相关资源链接](https://github.com/NodeBB/nodebb-plugin-write-api)
 2. set the token to plugins-write-api user(your main site)
 
+点击管理员左边 菜单 Write API, 生成token, 并把该token放到你主站里面的设置文件中.
+
+
 #### setting as admin
-1. ADMIN CONTROL PANEL->SETTINGS->USER, disallow registration, disallow acount deletion
-2. ADMIN CONTROL PANEL->APPEARANCE->THEMES, chose Persona
+1. ADMIN CONTROL PANEL->SETTINGS->USER, disallow registration, disallow account deletion
+2. ADMIN CONTROL PANEL->APPEARANCE->THEMES, choose Persona THEMES
 
 #### set cookie session
 ADMIN CONTROL PANEL->SETTINGS->ADVANCED, DOMAIN SETTINGS, set session cookie to .yourdomainname.com (例子：.test.com)
 
 
-## update log
+## update log  文件修改记录
 1. update src/user/profile.js, add  User.resetPassword function
 2. customize nodebb-theme-persona plugin, forbidden user password/name/email update
 3. customize nodebb-plugin-write-api, refer to https://github.com/bpceee/nodebb-plugin-write-api
 
 
-# 主站
+
+# 主站设置
 
 ## 测试环境
 ### 设置/etc/hosts
@@ -50,6 +61,9 @@ ADMIN CONTROL PANEL->SETTINGS->ADVANCED, DOMAIN SETTINGS, set session cookie to 
 
     127.0.0.1       test.com      #主站
     127.0.0.1       bbs.test.com  #bbs二级站
+
+    127.0.0.1	hcd.com  #主站
+    127.0.0.1	community.hcd.com  #bbs二级站
 
 ### config.js
 例子：
